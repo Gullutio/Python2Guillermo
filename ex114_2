@@ -1,0 +1,21 @@
+neg_list = []
+pos_list = []
+zer_list = []
+
+while True:
+    input_text = input("type in a number")
+    if input_text == "":
+        break
+    if input_text == "0":
+        zer_list.append(input_text)
+    elif input_text[0] == "-":
+        neg_list.append(input_text)
+    else:
+        pos_list.append(input_text)
+
+for i in neg_list:
+    print(i)
+for i in zer_list:
+    print(i)
+for i in pos_list:
+    print(i)

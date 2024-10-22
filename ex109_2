@@ -1,0 +1,19 @@
+import ex106
+
+
+def magic_year(m, d, y):
+    y = str(y)
+    y = int(str(y[2]) + str(y[3]))
+    if m * d == y:
+        return "magic"
+    else:
+        return "not magic"
+
+
+print("year, month, day")
+for year in range(100):
+    year += 1900
+    for month in range(1, 13):
+        for day in range(ex106.month_calc(month, year)):
+            if magic_year(month, day, year) == "magic":
+                print(f"{year}, {month}, {day}")
