@@ -23,7 +23,7 @@ try:
                     else:
                         violates_rule.add(word)
 
-    print(f"{follows_rule} {violates_rule}")
+    print(f"follows: {follows_rule} violates: {violates_rule}")
 
 except FileNotFoundError:
     print("File not found")
