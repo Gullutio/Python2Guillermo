@@ -1,3 +1,4 @@
+#ex150.txt
 input_text = input('type in name of input file - ')
 final = ''
 with open(input_text,'r') as file:
