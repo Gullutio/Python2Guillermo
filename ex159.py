@@ -6,6 +6,7 @@
 import random as r
 import sys
 try:
+    #ex150.txt
     with open(sys.argv[1],'r') as file:
         words = []
         for word in file:
