@@ -1,8 +1,4 @@
-# JU: 
-# - needs to read the name of output file as well.
-# - need to output to file, not print
-# - fix the code to fulfill the requirementss
-
+#ex150.txt
 input_text = input('type in name of input file - ')
 final = ''
 with open(input_text,'r') as file:
