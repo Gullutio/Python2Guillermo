@@ -1,3 +1,8 @@
+# JU:
+# - resolt needs to include capitalization of the second word. Currently, it does not.
+# - algorithm is too long. Currently, it filters words of length greater than 3.
+# - fix with shorter algorithm to fulfill the same requirements.
+
 import random as r
 import sys
 try:
