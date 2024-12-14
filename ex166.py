@@ -14,7 +14,9 @@ def collect_names(data_path):
                 target_set = girls_names
             if target_set != None:
                 with open(os.path.join(data_path, file_name), 'r') as f:
-                    target_set.update(line.rsplit(' ',1)[0].strip()for line in f)
+                    for line in f:
+                        name = line.rsplit(' ',1)[0].strip()
+                        target_set.add(name)
 
     return boys_names, girls_names
     
